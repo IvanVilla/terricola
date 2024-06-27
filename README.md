@@ -40,20 +40,27 @@ This command create a workspace and ./enviroments folder with a sub-folder for e
 ## Terricola commands
 
 To further use Terricola you need to use one or two arguments, first use the action:
-    configure (configure terricola).
-    fmt (format Terraform files).
-    init (initialize Terraform).
-    plan (create Terraform plan)."
-    apply (apply Terraform).
-    reset (reconfigure terricola).
+
+* configure (configure terricola).
+* fmt (format Terraform files).
+* init (initialize Terraform).
+* plan (create Terraform plan).
+* apply (apply Terraform).
+* reset (reconfigure terricola).
+
 If you are planning or applying you must select the environment:
-    dev (development environment).
-    pre (non-production previous environment).
-    sta (non-production QA environment).
-    pro (production environment).
+
+* dev (development environment).
+* pre (non-production previous environment).
+* sta (non-production QA environment).
+* pro (production environment).
+
 Examples:
-    ./terricola.py plan dev
-    ./terricola.py reset
+
+```bash
+./terricola.py plan dev
+./terricola.py reset
+```
 
 ## License
 
