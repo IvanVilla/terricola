@@ -1,7 +1,7 @@
 
 # Terricola
 
-```
+```console
 ___________                 .__             .__          
 \__    ___/_________________|__| ____  ____ |  | _____   
   |    |_/ __ \_  __ \_  __ \  |/ ___\/  _ \|  | \__  \  
@@ -37,7 +37,7 @@ You need to have installed python3 in your system with the following modules:
 Before start, you have to init terricola to use it using:
 ./terricola configure
 
-This command create a workspace and ./enviroments folder with a sub-folder for each environment, and will copy variables yaml files to each ./environments/<env> folder.
+This command create a workspace and ./enviroments folder with a sub-folder for each environment, and will copy variables yaml files to each ./environments/"env" folder.
 
 ## Terricola commands
 
