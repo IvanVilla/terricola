@@ -15,10 +15,6 @@ Terraform Wrapper created by ivilla klaussius@hotmail.es
 
 Terricola is a tiny Terraform wrapper, made for manage multiple terraform environments (dev, pre, sta, pro).
 
-## Why you use Terricola
-
-Terricola is easy to use, you only need to configure a main.tf in the folder and yaml (*.yml) files into ./variables folder.
-
 ## How to configure Terricola
 
 ### Dependences
@@ -33,6 +29,8 @@ You need to have installed python3 in your system with the following modules:
 * yaml
 
 ### First configuration
+
+Terricola is easy to use, you only need to configure a main.tf in the folder and yaml (*.yml) with your variables in a ./variables folder.
 
 Before start, you have to init terricola to use it using:
 ./terricola configure
