@@ -21,6 +21,19 @@ Terricola is easy to use, you only need to configure a main.tf in the folder and
 
 ## How to configure Terricola
 
+### Dependences
+
+You need to have installed python3 in your system with the following modules:
+
+* datetime
+* os
+* shutil
+* subprocess
+* sys
+* yaml
+
+### First configuration
+
 Before start, you have to init terricola to use it using:
 ./terricola configure
 
