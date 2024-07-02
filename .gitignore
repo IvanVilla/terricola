@@ -1,0 +1,7 @@
+# Ignore all files
+*
+
+# Not ignore:
+!/terricola.py
+!/README.md
+!/.gitignore

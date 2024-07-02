@@ -35,18 +35,46 @@ Terricola is easy to use, you only need to configure a main.tf in the folder and
 Before start, you have to init terricola to use it using:
 ./terricola configure
 
-This command create a workspace and ./enviroments folder with a sub-folder for each environment, and will copy variables yaml files to each ./environments/"env" folder.
+This command create a workspace and ./enviroments folder with a sub-folder for each environment, and will copy variables yaml files to each ./environments/"env" folder. Also it with add a ./terraform folder and main.tf, variables.tf files.
+
+tierra.lock is a terricola file that indicates terricola is installed.
+
+#### Recommended configuration
+
+```
+terricola/ # Main folder
+├─ terricola.py # Terricola executable
+├─ README.md # Terricola doc
+├─ tierra.lock # Lock file
+├─ main.tf # Terraform main file
+├─ variables.tf # Variables file
+├─ environments/ # Any environment have a folder
+|  ├─ dev/
+|  |  ├─ my_variables.yml
+|  ├─ pre/
+|  |  ├─ my_variables.yml
+|  ├─ sta/
+|  |  ├─ my_variables.yml
+|  ├─ prod/
+|  |  ├─ my_variables.yml
+├─ terraform/ # Custom terraform
+|  ├─ modules/ # Modules
+|  ├─ main.tf # Terraform main file
+|  ├─ variables.tf # Terraform variables file
+```
 
 ## Terricola commands
 
 To further use Terricola you need to use one or two arguments, first use the action:
 
 * configure (configure terricola).
+* basics (configure terraform basics).
 * fmt (format Terraform files).
 * init (initialize Terraform).
 * plan (create Terraform plan).
 * apply (apply Terraform).
 * reset (reconfigure terricola).
+* uninstall (uninistall terricola features).
 
 If you are planning or applying you must select the environment:
 
