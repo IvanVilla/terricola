@@ -147,7 +147,7 @@ def reset():
             result = subprocess.call(['terraform', 'workspace', 'select', 'default'])
             for environment in environments:
                 result = subprocess.call(['terraform', 'workspace',  'delete', environment])
-            tf_configure()
+            configure()
         else:
             print("\nAction cancelled by the user.")
     else:
@@ -232,6 +232,6 @@ elif len(sys.argv) > 2 and sys.argv[1] == "plan" and sys.argv[2] in environments
 elif len(sys.argv) > 2 and sys.argv[1] == "apply" and sys.argv[2] in environments:
     tf_do(sys.argv[2], "apply")
 elif len(sys.argv) > 1 and sys.argv[1] == "reset":
-    tf_reset()
+    reset()
 else:
     print(error_message)
