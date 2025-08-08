@@ -68,7 +68,7 @@ terricola/ # Main folder
 To further use Terricola you need to use one or two arguments, first use the action:
 
 * configure (configure terricola).
-* fmt (format Terraform files).
+* format (format Terraform files).
 * init (initialize Terraform).
 * plan (create Terraform plan).
 * apply (apply Terraform).
